@@ -10,6 +10,11 @@ import UIKit
 
 class FirstCell: UITableViewCell {
 
+    @IBOutlet weak var firstImageView: UIImageView!
+    @IBOutlet weak var label: UILabel!
+    
+    var closure: (()->Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +26,7 @@ class FirstCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func closureButton(_ sender: Any) {
+//        closure
+    }
 }
